@@ -4,7 +4,12 @@
 <head>
   <title> 2023.01.01 仙女臭猪在一起3周年</title>
   <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
-
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/zzsc-demo.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/x0popup.min.css">
+	<link rel="stylesheet" href="css/rainbow.monokai.css">
+	
   <style>
     body {
       padding: 0;
@@ -23,8 +28,9 @@
 	  <div style="text-align:center;clear:both"> </div>
 	  <p><a href="#">  </a></p>
 	  
+		  
 	  <p style="font-size: 50px">
-		<a href="#">
+		<a class="button bg-color-3" href="javascript:exec(1);">
 		  2023.01.01 <br />仙女臭猪在一起3周年快乐
 		</a>
 	  </p>
@@ -35,6 +41,16 @@
 
   <canvas id="canvas"></canvas>
   <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/x0popup.min.js"></script>
+	<script src="js/rainbow.min.js"></script>
+	<script src="js/rainbow.linenumbers.min.js"></script>
+	<script type="text/javascript">
+		function exec(number) {
+//			var code = document.getElementById('code-' + number).innerText;
+			var my_code = "x0p('2023.01.01 仙女臭猪在一起3周年快乐！', '亲爱的仙女小瑞瑞宝宝,你好。今天是我们在一起3周年的日子。第3年也是意义非凡的一年，我俩经历了毕业、工作等方方面面的许多事情，有好的也有不好的。遇到好的事情，我俩一起开心一起欢笑；遇到不好的事情，我俩一起扶持一起度过。未来的路，我俩继续大手拉小手，一起走下去。3周年快乐，元旦快乐！遇到问题不要怕，我是你的底气^_^  臭猪,2023.01.01');"
+			eval(my_code);
+		}
+	</script>
   <script>
     $(function () {
       var canvas = $('#canvas')[0];
