@@ -3,7 +3,8 @@
  
 <head>
   <title> 2023.01.01 仙女臭猪在一起3周年</title>
-  
+  <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
   <style>
     body {
       padding: 0;
@@ -16,13 +17,29 @@
 </head>
  
 <body>
+  <div>
+	  <p><a href="#">  </a></p>
+	  <p><a href="#">  </a></p>
+	  <div style="text-align:center;clear:both"> </div>
+	  <p><a href="#">  </a></p>
+	  
+	  <p style="font-size: 50px">
+		<a href="#">
+		  2023.01.01 <br />仙女臭猪在一起3周年快乐
+		</a>
+	  </p>
+
+	  <p><a href="#">  </a></p>
+	  <p><a href="#">  </a></p>
+  </div>
+
   <canvas id="canvas"></canvas>
   <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
   <script>
     $(function () {
       var canvas = $('#canvas')[0];
       canvas.width = $(window).width();
-      canvas.height = $(window).height();
+      canvas.height = $(window).height() * 0.8;
       var ctx = canvas.getContext('2d');
  
       // resize
